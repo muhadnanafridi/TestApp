@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menuRowHeightSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/imdMenuCatIcon"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_icon_sel"
+            android:tint="@color/menuItemIconColor"
+            android:layout_alignTop="@+id/imgExpandMenu" />
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textSize="@dimen/menuItemSize"
+            android:textColor="@color/menuItemColor"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imdMenuCatIcon"
+            android:layout_toEndOf="@+id/imdMenuCatIcon" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/imgExpandMenu"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_plus"
+            android:visibility="gone"
+            android:tint="#878787"/>
+    </RelativeLayout>
+</RelativeLayout>

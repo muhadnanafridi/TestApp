@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SpinnerView">
+        <attr name="imgSrc" format="integer" />
+        <attr name="imgTint" format="integer" />
+        <attr name="hint" />
+    </declare-styleable>
+    <bool name="isTablet">true</bool>
+
+</resources>

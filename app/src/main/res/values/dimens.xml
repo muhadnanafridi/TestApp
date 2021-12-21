@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="editTextTextSize">16sp</dimen>
+
+    <!--================Service User Dropdown  ======================-->
+    <dimen name="spinnerItemSize">15sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--================Menu Font Size ======================-->
+    <dimen name="menuItemSize" >17sp</dimen>
+    <dimen name="menuRowHeightSize" >55dp</dimen>
+    <dimen name="menuUserNameSize" >17dp</dimen>
+
+    <!--================ Header Bar======================-->
+    <dimen name="headerBarHeight" >56dp</dimen>
+    <dimen name="headerBarTitleSize" >16sp</dimen>
+    <dimen name="headerBarIconSize" >24dp</dimen>
+    <dimen name="drawer_width">300dp</dimen>
+    <dimen name="default_page_padding">10dp</dimen>
+    <dimen name="default_top_margin">10dp</dimen>
+
+    <dimen name="splash_img_height_size" >250dp</dimen>
+    <dimen name="splash_img_width_size" >150dp</dimen>
+
+    <dimen name="text_hight" >1dp</dimen>
+</resources>

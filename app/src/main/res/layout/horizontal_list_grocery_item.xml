@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:elevation="0dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/llProductItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp">
+
+                        <ImageView
+                            android:id="@+id/ivWish"
+                            android:layout_width="28dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_heart"
+                            android:visibility="visible"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"/>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/ivProductImage"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/tvWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10kg"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Frosch Cleaning Bundle"
+                        android:textSize="14sp"
+                        android:lines="1"/>
+
+                    <TextView
+                        android:id="@+id/tvOffer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 in 1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvProductPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13 AED"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlAddtoCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/bg_rounded_purple"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Add to Cart"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <com.valucart_project.views.AddCartView
+                    android:id="@+id/addCartView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

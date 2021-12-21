@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+        <ExpandableListView
+            android:id="@+id/expandableListView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:padding="16dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:groupIndicator="@null"
+            android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

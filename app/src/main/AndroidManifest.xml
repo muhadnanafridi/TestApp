@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.valucart_project"
+    android:theme="@style/AppTheme">
+
+    <permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".application.ValuCartApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:showOnLockScreen="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:screenOrientation="portrait"
+        android:banner="@mipmap/ic_launcher_round">
+
+        <activity
+            android:name=".screen.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+<!--        <activity
+            android:name=".screen.SplashScreenTest"
+            android:label="@string/app_name_test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>-->
+<!--
+        <activity
+            android:name=".screen.DeepLinkingScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ValuCart"
+                    android:host="type" />
+            </intent-filter>
+        </activity>
+-->
+        <activity
+            android:name=".screen.DeepLinkingScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:scheme="valucart"></data>
+            </intent-filter>
+        </activity>
+
+        <!--
+        //ValuCart/product/aQ5J2pYk6qRb
+        -->
+
+        <activity
+            android:name=".screen.DashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".screen.SuperSavorZoneScreen"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".screen.LoginScreen"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".screen.EmailLoginScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".screen.PhoneLoginScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".screen.TermConditionScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".screen.SocalRegistrationScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.ShopByCommunityScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.ProductListingScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.BundleDetailScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.BuildYourOwnBundleApprovalScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.MyScheduleScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".screen.OrderSummaryDetailScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="intent_filter_action" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen.MyAddressDetailScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.MyWishlistScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".screen.OnBoardingFirstScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".screen.OnBoardingSecondScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".screen.AddToCartProductScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".screen.ChooseStateSecondScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".screen.ChooseStateFirstScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.ProductDetailScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.CheckoutScreenPayment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.DeliverySuccessScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.DeliveryDateTimeScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.ProfileScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.ChangePasswordScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.MyBankCardScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.MyAddressScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.FeedbackScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.DeliveryAddressScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.BundleSummaryScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.OrderSummaryScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.RegisterScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".screen.ProductListingSearchScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".screen.ForgetPasswordScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.SearchFilterScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.HelpCentreScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".screen.PaymentByCardScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".screen.SearchScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".screen.UserWallet"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider${applicationId}"
+            android:exported="true" />
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b5318e529a1fc08be15e07111dac15892215bdc0" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name=".service.NotificationService" />
+
+        <receiver android:name=".service.OnBootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled"
+            android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="false"/>
+
+    </application>
+
+</manifest>
+

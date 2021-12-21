@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_state_artwork"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE YOUR STATE"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAppLogo"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We only deliver in Dubai and Sharjah"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/menuItemIconColor"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/llDubai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_white_rounded_gray_border">
+
+            <TextView
+                android:id="@+id/tvDubai"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="DUBAI"
+                android:textColor="@color/editFieldLabel"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/llSharjah"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_white_rounded_gray_border">
+
+            <TextView
+                android:id="@+id/tvSharjah"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="SHARJAH"
+                android:textColor="@color/editFieldLabel"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/llOther"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_white_rounded_gray_border">
+
+        <TextView
+            android:id="@+id/tvOther"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="OTHER"
+            android:textSize="18sp"
+            android:textColor="@color/editFieldLabel"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

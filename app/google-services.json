@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "876660737548",
+    "firebase_url": "https://login-235407.firebaseio.com",
+    "project_id": "gmaillogin-235407",
+    "storage_bucket": "gmaillogin-235407.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876660737548:android:0dcdb1791e3d25f1",
+        "android_client_info": {
+          "package_name": "com.valucart_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876660737548-67uto2i9amclrjl3m2v9h5ocooq8oshm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.valucart_project",
+            "certificate_hash": "dd786ce73737ac8870788a6c456ec99b850b704d"
+          }
+        },
+        {
+          "client_id": "876660737548-ahq9r5ftlnm49u5hloenve401k2m95iu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDurltSoMkkpHTim0vdqFSQn8BVLc3JOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876660737548-ahq9r5ftlnm49u5hloenve401k2m95iu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "876660737548-eskcasonvpl2qdro71tbkkku4cal6t6c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.KS.ValuCart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

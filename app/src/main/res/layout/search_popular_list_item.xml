@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_centerInParent="true"
+    android:id="@+id/rlPopularList">
+
+    <TextView
+        android:id="@+id/tvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Product"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_toLeftOf="@+id/ivArrow"/>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_right_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"/>
+    
+</RelativeLayout>

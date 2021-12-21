@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_state_artwork" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="CHOOSE YOUR STATE"
+        android:textColor="@color/colorAppLogo"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="We only deliver in Dubai and Sharjah"
+        android:textColor="@color/menuItemIconColor"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llDubai"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/bg_white_rounded_gray_border">
+
+                <TextView
+                    android:id="@+id/tvDubai"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="DUBAI"
+                    android:textColor="@color/editFieldLabel"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llSharjah"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg_white_rounded_gray_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSharjah"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="SHARJAH"
+                    android:textColor="@color/editFieldLabel"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOther"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_white_rounded_gray_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOther"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="OTHER"
+            android:textColor="@color/editFieldLabel"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+</LinearLayout>

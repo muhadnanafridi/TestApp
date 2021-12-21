@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This is the main color -->
+    <!-- This is the line -->
+    <item android:bottom="@dimen/text_hight">
+        <shape>
+            <size android:height="1dp"/>
+            <solid android:color="#252525" />
+        </shape>
+    </item>
+</layer-list>

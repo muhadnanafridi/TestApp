@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorClearWhite"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/colorAppLogo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="My Schedule"
+            android:textColor="@color/colorAppLogo"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/ivMenuSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_search"
+            android:tint="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/tvNoRecordAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Record Available"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="500dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

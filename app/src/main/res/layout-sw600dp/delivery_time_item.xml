@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:id="@+id/llItemHeader"
+        android:background="@drawable/bg_white_rounded_gray_border"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00 - 12:00"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
